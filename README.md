@@ -23,4 +23,4 @@ MLOps Project - This repository demonstrates the implementation of key MLOps pra
 ## Getting Started
 - Clone the repository:
   ```bash
-  git clone https://github.com/username/mlops-project.git
+  git clone https://github.com/Avis2025/MLOPS-Group-57_Assignment-1.git
