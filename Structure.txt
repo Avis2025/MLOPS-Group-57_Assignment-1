@@ -1,0 +1,52 @@
+mlops-project/
+├── M1-CI_CD_Pipeline/               # Folder for M1 deliverables
+│   ├── .github/
+│   │   └── workflows/
+│   │       └── ci.yml               # GitHub Actions configuration for CI/CD pipeline
+│   ├── src/                         # Source code for M1 pipeline
+│   │   ├── preprocess.ipynb         # Data preprocessing logic
+│   │   ├── train.ipynb              # Model training logic
+│   │   └── evaluate.ipynb           # Model evaluation logic
+│   ├── tests/                       # Unit tests
+│   │   ├── test_preprocess.ipynb    # Test for preprocess.ipynb
+│   │   └── test_train.ipynb         # Test for train.ipynb
+│   ├── requirements.txt             # Dependencies for the CI/CD pipeline
+│   ├── README.md                    # Documentation for M1 tasks
+│   └── logs/                        # Logs/screenshots of successful CI/CD runs
+│       └── pipeline-log.txt
+├── M2-Experiment_Tracking/          # Folder for M2 deliverables
+│   ├── mlruns/                      # MLflow logs for experiment tracking
+│   ├── dvc-files/                   # DVC configuration and version files
+│   │   ├── data.dvc                 # DVC metadata for dataset
+│   │   └── .dvc/                    # DVC cache directory
+│   ├── data/                        # Placeholder or version-controlled dataset
+│   ├── src/                         # Scripts for MLflow experiment runs
+│   │   ├── train_experiment1.ipynb  # Training script with experiment tracking
+│   │   ├── train_experiment2.ipynb  # Second experiment
+│   │   └── train_experiment3.ipynb  # Third experiment
+│   ├── requirements.txt             # Dependencies for MLflow and DVC
+│   ├── README.md                    # Documentation for M2 tasks
+├── M3-Model_Experimentation/        # Folder for M3 deliverables
+│   ├── src/
+│   │   ├── train.ipynb              # Training script for hyperparameter tuning
+│   │   └── tune.ipynb               # Hyperparameter tuning script (e.g., Optuna/GridSearchCV)
+│   ├── flask_app/
+│   │   ├── app.ipynb                # Flask application to serve the model
+│   │   ├── model.pkl                # Serialized trained model
+│   │   ├── requirements.txt         # Flask-specific dependencies
+│   │   └── Dockerfile               # Dockerfile for containerizing the application
+│   ├── hyperparameter_results.txt   # Logs or report for tuning results
+│   ├── README.md                    # Documentation for M3 tasks
+├── M4-Deployment_Orchestration/     # Folder for M4 deliverables (Optional)
+│   ├── kubernetes/                  # Kubernetes configuration files
+│   │   ├── deployment.yaml          # Deployment configuration for Kubernetes
+│   │   ├── service.yaml             # Service configuration for exposing the model
+│   │   └── helm-chart/              # Helm chart for managing deployments
+│   │       ├── Chart.yaml
+│   │       └── values.yaml
+│   ├── cloud-deployment/            # Configurations for cloud deployment
+│   │   ├── aws-ecs-config.json      # AWS ECS configuration (example)
+│   │   ├── gke-config.json          # GCP Kubernetes Engine configuration
+│   └── README.md                    # Documentation for M4 tasks
+├── README.md                        # Main README explaining the project and linking to subfolders
+└── LICENSE                          # Project license (optional)
