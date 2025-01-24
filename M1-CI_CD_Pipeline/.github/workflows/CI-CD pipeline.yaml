@@ -3,10 +3,10 @@ name: M1 CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Or any branch you want this pipeline to run on
+      - M1-CI_CD_Pipeline  # Or any branch you want this pipeline to run on
   pull_request:
     branches:
-      - main  # For pull requests targeting the main branch
+      - M1-CI_CD_Pipeline  # For pull requests targeting the main branch
 
 jobs:
   build:
